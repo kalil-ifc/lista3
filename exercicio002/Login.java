@@ -25,7 +25,6 @@ public class Login {
 		
 		System.out.println("Fim");
 		
-		// Processos e saídas
 		entrada.close();
 	}
 
