@@ -15,8 +15,8 @@ public class CriaTabuada {
 				System.out.println(numTabuada + " x " + i + " = " + (numTabuada*i));
 			}else {
 			System.out.println("Escolha um número positivo!");
-		} 
+			} 
 		}
+		entrada.close();
 	}
-
 }
