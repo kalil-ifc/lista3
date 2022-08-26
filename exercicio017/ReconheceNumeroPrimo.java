@@ -10,7 +10,7 @@ public class ReconheceNumeroPrimo {
 		System.out.print("Número: ");
 		int num = entrada.nextInt();
 		
-		for (int i=2; i<num; i++) {
+		for (int i=2; i<=(num/2); i++) {
 			if (num%i==0) {
 				primo=false;
 			} else {
