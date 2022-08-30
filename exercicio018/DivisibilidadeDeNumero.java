@@ -10,7 +10,7 @@ public class DivisibilidadeDeNumero {
 		System.out.print("Número: ");
 		int num = entrada.nextInt();
 		
-		for (int i=2; i<=(num/2); i++) {
+		for (int i=1; i<=num; i++) {
 			
 			if ( num % i == 0) {
 				cont=cont+1; 

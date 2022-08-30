@@ -3,25 +3,34 @@ import java.util.Scanner;
 
 public class ReconheceNumeroPrimo {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
-		boolean primo = true;
 		System.out.println("Informe um número para saber se é primo.");
 		System.out.print("Número: ");
 		int num = entrada.nextInt();
+		boolean primo = true, ficar=true;
+		int x=2, z=0;
 		
-		for (int i=2; i<=(num/2); i++) {
-			if (num%i==0) {
-				primo=false;
+		while (ficar) {
+			z=num%x;
+			if (z==0 && x!=num) {
+				primo=false; 
+				ficar=false;
 			} else {
-				primo=true;
+				x++; 
+			}
+			if (x>num) {
+				ficar=false;
 			}
 		}
-		if (primo) {
-			System.out.println("É primo");
-		} else {
-			System.out.println("Náo é primo");
-		}		
+		if (primo)
+			System.out.println("É PRIMO");
+		else 
+			System.out.println("NÁO É PRIMO");
+		
 		entrada.close();
 	}
 
