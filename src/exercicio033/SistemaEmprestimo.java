@@ -10,7 +10,9 @@ public class SistemaEmprestimo {
 		System.out.println("Informe o valor da dívida para o cálculo dos juros.");		
 		System.out.print("Divida: ");
 		divida=entrada.nextDouble();
-				
+		
+		entrada.close();
+		
 		//relatório do valor da dívida conforme quantidade de parcelas e juros
 		System.out.println("Dívida | Juros | Parcelas | Valor Parcela");
 		for (parcelas=1; parcelas<=12; parcelas++) {
@@ -49,9 +51,8 @@ public class SistemaEmprestimo {
 				System.out.print(" | ");
 				System.out.print("R$ "+divida/parcelas);
 			}
+		
 		}
-	
-	entrada.close();
 	}
 
 }
